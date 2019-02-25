@@ -1,0 +1,107 @@
+ .done{
+      text-decoration: line-through;
+    }
+    .textInput{
+      box-sizing: border-box;
+      padding: 10px 20px;
+      background: lightgray;
+      width: 30%;
+    }
+    .addButton{
+      box-sizing: border-box;
+      padding: 10px 20px;
+      background: #ffcc00;
+      width: 10%;
+      cursor: pointer;
+    }
+    .block-position{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+
+      margin: 20px 0px;
+    }
+    .block-todolist{
+      width: 100%;
+      margin: 20px 0px;
+      border: 1px solid lightgray;
+      background: #FFDAD8;
+     box-sizing: border-box;
+    }
+    .header-todolist{
+      margin: 20px 0px;
+      text-align: center;
+      color: #555555;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+
+    .DoneCheckbox,
+    .TodoText{
+      margin-right: 10px;
+    }
+    .DoneCheckbox{
+      
+      visibility: hidden;
+    }
+
+    
+    .TodoText{
+      width: 85%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+
+
+    }
+    .chacked:before {
+      content: "\2714 ";
+    }
+    .button-remove{
+      background: blue;
+      color: #fff;
+      padding: 5px 10px;
+      position: relative;
+      width: 10%;
+      margin-right: 10px;
+      box-sizing: border-box; 
+      cursor: pointer;
+
+    }
+    .toDoList {
+    padding: 0px 20px 0 20px;
+    box-sizing: border-box;
+    }
+
+    .listItem {
+    	border: 1px solid lightgray;
+    	height: 50px;
+    	width: 100%;
+    	display: flex;
+    	flex-flow: row nowrap;
+      align-items: center;
+       background: lightblue;
+      box-sizing: border-box;
+
+    }
+   
+    
+    li.listItem:nth-child(odd) {   /* odd всі парні li */
+      background: lightgreen;
+    }
+    li.listItem:nth-child(even) {     /* even всі непарні li */
+      background: lightblue;
+    }
+
+      li.listItem:hover {
+      background:#E78EAE;
+      color: black;
+
+    }
+    li.listItem:hover  .TodoText   {
+     
+      font-size: 18px;
+    }

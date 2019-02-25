@@ -1,0 +1,155 @@
+@media screen and (max-width: 990px) {
+	.my-galerry__all-img{
+		flex-flow: row wrap;
+	}
+	.box-img{	
+		width: 50%;	
+	}
+	.input-contact{
+		flex-flow: column wrap;
+		justify-content: center;	
+	}
+	.input-contact__item{	
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	nav {
+		width: 100%;
+		min-height: 250px;		
+		position: relative;		
+		align-items: center;
+		justify-content: center;	
+		overflow-y: hidden;
+	}
+	
+	.list-item{
+		padding: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	a {
+		width: 150px;
+	}
+	.main{
+		padding: 0px 20px;
+	}
+	.logo-wrap{
+		padding: 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column nowrap;
+		margin-bottom: 20px;
+	}
+	.logo{	
+		margin-bottom: 0px;
+		margin-right: 0px;
+		margin: 10px;
+	}
+	.wrapper-header{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-flow: column nowrap;
+	}
+	.social-icons{
+		align-items: center;
+		justify-content: center;
+	}
+	.menu-nav, .social-icons{
+		display: none;
+	}
+	.menu-nav{
+		padding-top: 30px;
+	}
+	.bar {
+		display: flex;
+		flex-flow: column nowrap;
+		background-color: #6495ED;
+		align-items: center;
+		justify-content: center;
+		padding: 0px;
+		font-size: 25px;
+	}
+	.bar__label .fa-bars{
+		display: block;
+		padding: 10px 40px;
+}
+	.bar__label .fa-bars:hover {
+		color: #282e35;
+		
+	}
+	.bar__checkbox:checked ~ .menu-nav{
+		display: block;
+		width: 100%;
+		padding: 0px;
+	}
+	.bar__checkbox:checked ~ .social-icons{
+		display: flex;
+		margin: 0px;		
+	}
+	
+
+
+	.inside h3{	
+		font-size: 25px;
+	 	margin-bottom: 15px;
+	  	color: white; 
+ 
+	}
+	.inside p{	
+		 font-size: 20px;
+	 	 line-height: 20px;
+	 	 color: white;
+ 	
+	}
+	.inside {
+		padding: 40px;
+	}
+	
+}
+
+@media screen and (max-width: 800px) {
+	header{
+		padding: 180px 40px;
+	}
+}
+@media screen and (max-width: 770px) {
+	
+	.box-img{	
+		width: 100%;	
+	}
+}
+@media screen and (min-width: 991px) and (max-width: 1400px) {
+	
+	.box-img:hover .box-img__hover{	
+    top: -103%;   	
+	}
+	.inside {
+		padding: 10px;
+	}
+}
+@media screen and (min-width: 1140px)  {
+	
+	
+	.inside {
+		padding: 30px;
+	}
+}
+@media screen and (max-width: 375px) {
+	
+	.box-img:hover .box-img__hover{
+	
+   	 top: -102%;  	
+	}
+	header{
+		padding: 30px;
+	}
+	header .title {
+		font-size: 30px;
+	}
+	header .description-title{
+		font-size: 20px;
+	}
+}
