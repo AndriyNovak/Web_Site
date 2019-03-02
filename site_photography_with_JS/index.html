@@ -9,12 +9,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<!-- <script src="main.js"></script> -->
+	<script src="main.js"></script>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	
 	<link rel="stylesheet" type="text/css" href="style_slider.css">
 	<script type="text/javascript" src="slider.js"></script>
-
+	<script type="text/javascript" src="logotip.js"></script>
+	<link rel="stylesheet" type="text/css" href="style_logotip.css">
 	<link rel="stylesheet" href="style_Todolist.css">
 	<script type="text/javascript" src="Todolist.js"></script>
 
@@ -27,11 +28,21 @@
 
 </head>
 <body>
-	<nav class=" color-white  ">
+	<nav class=" color-white  nav " >
 		<div class="logo-wrap ">
-			<img class = "logo" src="img/profile.jpg" alt="logo-profile">
+			<img class = "logo" src="" alt="logo-profile" title="Сменить логотип">
+			<input class="password" autofocus type="password" name="pass" placeholder="Введите пароль ">
+			<button class="enterPass">Вход</button>
 			<h1 class="nameAuthor"><b>Nexton</b></h1> 
 			<p >Digital Photography</p>
+			<div class="divChangeLogo">
+				<img class="changeImg" src="img/logo/logo.png"></img>
+				<img class="changeImg" src="img/logo/logotip-ghostbuster.jpg"></img>
+				<img class="changeImg" src="img/logo/miniautra-logotip.png"></img>
+				<img class="changeImg" src="img/logo/logo_instagram.jpg"></img>
+				<img class="changeImg" src="img/profile.jpg"></img>
+			</div>
+			<button class="btnSaveLogo">Сохранить</button>
 		</div>
 		<div class="bar">
 			<input class="bar__checkbox" type="checkbox" id="checkbox">
@@ -99,6 +110,10 @@
 				<div class="box-img wow zoomIn" data-wow-duration="1s" data-wow-delay="1s">
 					<img class="box-img__item" src="img/1.jpg" alt="image_1">
 					<div class="box-img__hover">
+						<div class="position-img-expand">
+							<img class="img-expand" src="img/icon/expand.png">
+						</div>
+						
 						<div class="inside">
 							<h3>Pellentesque porta ligula</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
@@ -110,15 +125,22 @@
 				<div class="box-img wow zoomIn" data-wow-duration="1s" data-wow-delay="1s">
 					<img class="box-img__item" src="img/2.jpg" alt="image_2">
 					<div class="box-img__hover">
+						<div class="position-img-expand">
+							<img class="img-expand" src="img/icon/expand.png">
+						</div>
 						<div class="inside">
 							<h3>Pellentesque porta ligula</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
 						</div>
 					</div>
+					
 				</div>
 				<div class="box-img wow zoomIn" data-wow-duration="1s" data-wow-delay="1s">
 					<img class="box-img__item" src="img/3.jpg" alt="image_3">
 					<div class="box-img__hover">
+						<div class="position-img-expand">
+							<img class="img-expand" src="img/icon/expand.png">
+						</div>
 						<div class="inside">
 							<h3>Pellentesque porta ligula</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
@@ -128,6 +150,9 @@
 				<div class="box-img wow zoomIn" data-wow-duration="1s" data-wow-delay="1s">
 					<img class="box-img__item" src="img/4.jpg" alt="image_4">
 					<div class="box-img__hover">
+						<div class="position-img-expand">
+							<img class="img-expand" src="img/icon/expand.png">
+						</div>
 						<div class="inside">
 							<h3>Pellentesque porta ligula</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
@@ -137,6 +162,9 @@
 				<div class="box-img wow zoomIn" data-wow-duration="1s" data-wow-delay="1s">
 					<img class="box-img__item" src="img/5.jpg" alt="image_5">
 					<div class="box-img__hover">
+						<div class="position-img-expand">
+							<img class="img-expand" src="img/icon/expand.png">
+						</div>
 						<div class="inside">
 							<h3>Pellentesque porta ligula</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
@@ -146,6 +174,9 @@
 				<div class="box-img wow zoomIn" data-wow-duration="1s" data-wow-delay="1s">
 					<img class="box-img__item" src="img/6.jpg" alt="image_6">
 					<div class="box-img__hover">
+						<div class="position-img-expand">
+							<img class="img-expand" src="img/icon/expand.png">
+						</div>
 						<div class="inside">
 							<h3>Pellentesque porta ligula</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
@@ -155,7 +186,7 @@
 				
 			</div>	
 			<div class="my-galerry__btn-wrap">
-				<button class="btn-gallery"><a href="gallery.html">Open Gallery</a></button>
+				<button class="btn-gallery"><a href="gallery.html#Gallery">Open Gallery</a></button>
 			</div>
 			<div class="line"></div>
 		</section>

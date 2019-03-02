@@ -6,7 +6,7 @@
     vertical-align: baseline;
 }
 body,html{
-	
+
 	color:#777777;
 	
 
@@ -45,6 +45,11 @@ nav {
 	border: 4px solid white;
 	margin-bottom: 20px;
 	margin-right: 40px;
+	cursor: pointer;
+	background: lightblue;
+}
+.logo:hover{
+	border: 4px solid blue;
 }
 .nameAuthor{
 	margin:0 0 5px 0;
@@ -338,8 +343,8 @@ header {
 }
 .box-img:hover .box-img__hover{
 	position: relative;
-    opacity: 1;
-    top: -101%;
+    opacity: 0.9;
+    top: -101.5%;
    	visibility: visible;
    
 }
@@ -354,7 +359,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-     background: rgba(0, 0, 0, 0.9); 
+     background:#748EAE; 
 
     -webkit-transition: all 200ms linear;
     -o-transition: all 200ms linear;
@@ -362,6 +367,106 @@ header {
 
 
 }
+.position-img-expand{
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+.img-expand{
+	width: 30px;
+	height: 30px;
+	margin: 10px 10px 0 0 ;
+		
+}
+.img-expand:hover {
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	margin: 5px 5px 0 0 ;
+}
+
+/*увеличить картинку*/
+.divScreen{
+	position: absolute;
+    height: 100%;
+    width: 100%;
+   /* z-index: 20;*/
+    
+    display: -webkit-box;
+    
+    display: -webkit-flex;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.imgScreen{
+ width: 50%;
+ height: 60%;
+ position: fixed;
+ 
+   /*  z-index: 100;*/
+     opacity: 1 ;
+}
+.divDeleteSign{
+	/*position: absolute;*/
+	 height: 100%;
+    width: 100%;
+    z-index: 320;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	opacity: 1 ;
+
+
+}
+.delSignImg{
+	width: 30px;
+	height: 30px;
+	top: 20%;
+	right: 25%;
+	margin: 10px 10px 0 0 ;
+	position: fixed;
+	 z-index: 320;
+     opacity: 1 ;
+     
+
+ 
+}
+.delSignImg:hover{
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	margin: 5px 5px 0 0 ;
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+
+}
+
 .inside{
 	position: absolute;
     max-width: 100%;
